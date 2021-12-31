@@ -149,3 +149,53 @@
 // const arr8 =arr4;
 // arr8[0] =100;
 // console.log(arr4);
+
+/**
+ * mapやfilterを使った配列の処理
+ */
+
+const nameArr = ["田中", "山田", "仲田"];
+// for (let index = 0; index < nameArr.length; index++){
+//   console.log(`${index + 1}番目は${nameArr[index]}です。`);
+// }
+
+// const nameArr2 = nameArr.map((name)=>{
+//   return name;
+// })
+// console.log(nameArr2);
+
+// nameArr.map((name, index) => console.log(`${index + 1}番目は${nameArr[index]}です。`));
+
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 1;
+// });
+// console.log(newNumArr);
+
+// const newNameArr = nameArr.map((name) =>{
+//   if (name === "仲田"){
+//     return name
+//   } else {
+//     return `${name}です。`
+//   }
+// })
+// console.log(newNameArr);
+
+/**
+ * 三項演算子
+ */
+//ある条件 ? 条件がTRUEの時　：　条件がfalseの時
+// const val1 = 1 > 0 ? `trueです` : `falseです`
+// console.log(val1);
+
+// const num = 1300;
+// //console.log(num.toLocaleString());
+
+// const formattedNum = typeof num == "number" ? num.toLocaleString() : '数値を入れてね';
+// console.log(formattedNum);
+
+const checkSum = (num1, num2) => {
+  return num1 + num2 > 100 ? `100越えだよ` : `許容できる`;
+};
+
+console.log(checkSum(50, 40));
